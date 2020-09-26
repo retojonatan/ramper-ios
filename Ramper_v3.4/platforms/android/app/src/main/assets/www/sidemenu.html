@@ -1,0 +1,60 @@
+    <ons-page id="sidemenu-page">
+
+        <div class="user" id="menu-user">
+            <ons-list>
+                <ons-list-item>                    
+                    <div class="center">
+                        <span class="list-item__title" onclick="appNavigator.pushPage('login.html')">INICIAR
+                            SESIÓN</span><span class="list-item__subtitle">Usuario</span>
+                    </div>
+                </ons-list-item>
+            </ons-list>
+
+        </div>
+        <div class="menu" id="menu-list-user">
+            <ons-list>
+                <ons-list-item onclick="SetComerciante()">
+                    <div class="left">
+                        <ons-icon fixed-width class="list-item__icon" icon="fa-store"></ons-icon>
+                    </div>
+                    <div class="center">
+                        Comercio
+                    </div>
+                </ons-list-item>
+                <ons-list-item onclick="window.open('https://www.ramper.com.ar/publica','_system');">
+                    <div class="left">
+                        <ons-icon fixed-width class="list-item__icon" icon="fa-bullhorn"></ons-icon>
+                    </div>
+                    <div class="center">
+                        Publicá en Ramper
+                    </div>
+                </ons-list-item>
+                <ons-list-item onclick="window.open('https://api.whatsapp.com/send?phone=5491128337150&text=Hola!','_system');">
+                    <div class="left">
+                        <ons-icon fixed-width class="list-item__icon" icon="fa-comment"></ons-icon>
+                    </div>
+                    <div class="center">
+                        Contacto
+                    </div>
+                </ons-list-item>
+
+                <ons-list-item onclick="appNavigator.pushPage('sobreramper.html')">
+                    <div class="left">
+                        <ons-icon fixed-width class="list-item__icon" icon="fa-info-circle"></ons-icon>
+                    </div>
+                    <div class="center">
+                        Sobre Ramper
+                    </div>
+                </ons-list-item>
+                <ons-list-item onclick="Salir()">
+                    <div class="left">
+                        <ons-icon fixed-width class="list-item__icon" icon="fa-sign-out-alt"></ons-icon>
+                    </div>
+                    <div class="center">
+                        Salir
+                    </div>
+                </ons-list-item>
+
+            </ons-list>
+        </div>
+    </ons-page>

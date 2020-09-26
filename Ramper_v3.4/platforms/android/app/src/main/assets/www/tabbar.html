@@ -1,0 +1,48 @@
+<ons-page id="tabbar-page">
+    <ons-toolbar>
+
+        <div class="left">
+            <ons-toolbar-button onclick="fn.toggleMenu()">
+                <ons-icon icon="ion-navicon, material:md-menu"></ons-icon>
+            </ons-toolbar-button>
+
+        </div>
+
+        <div class="center" style="text-align:center;">
+            <img src="lib/img/logo.png" style="width: 70px; margin-top: 5px">
+        </div>
+
+        <!-- <div class="search-bar">
+                        <input type="search" class="search-input" style="width: 100%;" placeholder="¿Qué buscas en Ramper?">
+                </div>-->
+
+        <div class="right">
+            <ons-toolbar-button id="buscar-button">
+                <ons-icon icon="ion-search, material:md-search"></ons-icon>
+            </ons-toolbar-button>
+            <!-- <ons-toolbar-button icon="ion-android-options" class="options" onclick="showModal()"></ons-toolbar-button>
+                     <ons-toolbar-button icon="ion-ios-location"></ons-toolbar-button>-->
+        </div>
+    </ons-toolbar>
+
+    <ons-tabbar id="appTabbar" position="bottom">
+        <ons-tab label="Destacados" page="destacados.html" data-id="1" icon="fa-star" id="star" active>
+        </ons-tab>
+        <ons-tab label="Gastronomía" page="gastronomia.html" data-id="2" icon="fa-hamburger" id="food">
+        </ons-tab>
+        <ons-tab label="Shopping" page="comercios.html" data-id="3" icon="fa-shopping-basket" id="shopping">
+        </ons-tab>
+        <ons-tab label="Fitness" page="fitness.html" data-id="4" icon="fa-dumbbell" id="fitness">
+        </ons-tab>
+        <ons-tab label="Servicios" page="servicios.html" data-id="5" icon="fa-tools" id="servicios">
+        </ons-tab>
+    </ons-tabbar>
+
+    <script>
+        ons.getScriptPage().addEventListener('prechange', function (event) {
+            if (event.target.matches('#appTabbar')) {
+                event.currentTarget.querySelector('ons-toolbar .center').innerHTML = event.tabItem.getAttribute('label');
+            }
+        });
+    </script>
+</ons-page>

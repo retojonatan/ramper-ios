@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="ar.com.ramper.ramper" version="3.3" xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Ramper</name>
+    <description>
+        Todo lo que buscas al alcance de tu mano.
+    </description>
+    <author email="ventas@ramper.com.ar" href="https://ramper.com.ar">
+        Equipo de Orquestando Ideas.
+    </author>
+    <content src="index.html" />
+    <edit-config file="*-Info.plist" mode="merge" target="NSCameraUsageDescription">
+        <string>Se necesita acceso a la camara para poder escanear un código qr.</string>
+    </edit-config>
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <allow-navigation href="*" />
+    <icon src="res/icons/ios/icon-ramper.png" />
+    <preference name="Orientation" value="portrait" />
+    <preference name="SplashScreenDelay" value="5000" />
+    <preference name="SplashMaintainAspectRatio" value="true" />
+    <preference name="ShowSplashScreenSpinner" value="false" />
+    <preference name="CordovaWebViewEngine" value="CDVWKWebViewEngine" />
+    <preference name="scheme" value="app" />
+    <preference name="hostname" value="localhost" />
+</widget>

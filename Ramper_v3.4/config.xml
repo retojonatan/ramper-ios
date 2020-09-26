@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="ar.com.ramper.ramper" version="3.3" xmlns:android="http://schemas.android.com/apk/res/android" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Ramper</name>
+    <description>
+        Todo lo que buscas al alcance de tu mano.
+    </description>
+    <author email="ventas@ramper.com.ar" href="https://ramper.com.ar">
+        Equipo de Orquestando Ideas.
+    </author>
+    <content src="index.html" />
+    <plugin name="cordova-plugin-whitelist" spec="1" />
+    <plugin name="cordova-plugin-splashscreen" spec="~5.0.3" />
+    <edit-config target="NSCameraUsageDescription" file="*-Info.plist" mode="merge">
+    <string>Se necesita acceso a la camara para poder escanear un código qr.</string>
+    </edit-config>
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <allow-navigation href="*"/>
+    <preference name="Orientation" value="portrait" />
+    <preference name="SplashScreenDelay" value="5000" /> 
+    <preference name="SplashMaintainAspectRatio" value="true" />
+    <preference name="ShowSplashScreenSpinner" value="false"/>
+    <platform name="android">
+        <allow-intent href="market:*" />
+    </platform>   
+
+
+<icon src="res/icons/ios/icon-ramper.png"/>
+
+<preference name="CordovaWebViewEngine" value="CDVWKWebViewEngine" />
+    <platform name="android">
+        <icon src="res/icons/android/icon-36-ldpi.png" density="ldpi" />
+        <icon src="res/icons/android/icon-48-mdpi.png" density="mdpi" />
+        <icon src="res/icons/android/icon-72-hdpi.png" density="hdpi" />
+        <icon src="res/icons/android/icon-96-xhdpi.png" density="xhdpi" />
+    </platform>
+    <platform name="android">
+        <splash src="res/screens/android/screen-hdpi-portrait.png" density="land-hdpi"/>
+        <splash src="res/screens/android/screen-ldpi-portrait.png" density="land-ldpi"/>
+        <splash src="res/screens/android/screen-mdpi-portrait.png" density="land-mdpi"/>
+        <splash src="res/screens/android/screen-xhdpi-portrait.png" density="land-xhdpi"/>
+        <splash src="res/screens/android/screen-hdpi-portrait.png" density="port-hdpi"/>
+        <splash src="res/screens/android/screen-ldpi-portrait.png" density="port-ldpi"/>
+        <splash src="res/screens/android/screen-mdpi-portrait.png" density="port-mdpi"/>
+        <splash src="res/screens/android/screen-xhdpi-portrait.png" density="port-xhdpi"/>        
+    </platform>
+    
+    <platform name="ios">
+        <allow-intent href="itms:*" />
+        <allow-intent href="itms-apps:*" />
+    </platform>
+
+    <platform name="ios">
+    <!--iOS 8.0 +--> <!--iPhone Plus 6--><icon src="res/icons/ios/icon-60-3x.png" width="180" height="180"/>
+    <!--iOS 7.0 +--> <!--iPhone / iPod Touch--> <icon src="res/icons/ios/icon-60.png" width="60" height="60"/>
+    <icon src="res/icons/ios/icon-60-2x.png" width="120" height="120"/>
+    <icon src="res/icons/ios/icon-76.png" width="76" height="76"/>
+    <icon src="res/icons/ios/icon-76-2x.png" width="152" height="152"/>
+    <icon src="res/icons/ios/icon-40.png" width="40" height="40"/>
+    <icon src="res/icons/ios/icon-40-2x.png" width="80" height="80" />
+    <!--iPhone/iPod Touch--> <icon src="res/icons/ios/icon-ramper.png" width="57" height= "57"/>
+    <icon src="res/icons/ios/icon-ramper-2x.png" width="114" height="114"/>
+    <!--iPad--> <icon src="res/icons/ios/icon-72.png" width="72" height="72"/>
+    <icon src="res/icons/ios/icon-72-2x.png" width="144" height="144"/>
+    <!--iPhone Spotlight y el icono Configuración--> 
+    <icon src="res/icons/ios/icon-small.png" ancho="29" height="29"/>
+    <icon src="res/icons/ios/icon-small-2x.png" width="58" height="58"/>
+    <!--iPad Spotlight y el icono Configuración--> <icon src="res/icons/ios/icon-50.png" width="50" height="50"/>
+    <icon src="res/icons/ios/icon-50-2x.png" width ="100" height="100"/>
+    </platform>
+
+    <platform name="ios">
+    <!-- images are determined by width and height. Se admiten las siguientes-->   
+    <splash src="res/screens/ios/Default@2x~universal~anyany.png" />   
+    <splash src="res/screens/ios/Default~iphone.png" width="320" height="480"/>
+    <splash src="res/screens/ios/Default-2x-iphone.png" width="640" height="960"/>        
+    <splash src="res/screens/ios/screen-hdpi-portrait.png" width="1024" height="768"/>
+    <splash src="res/screens/ios/screen-ipad-portrait-2x.png" width="2048" height="1536"/>
+    <splash src="res/screens/ios/screen-iphone-568h-2x.png" width="640" height="1136"/>
+    <splash src="res/screens/ios/screen-iphone-portrait-667h.png" width="750" height="1334"/>
+    <splash src="res/screens/ios/screen-iphone-portrait-736h.png" width="1242" height="2208"/>
+    <splash src="res/screens/ios/screen-iphone-landscape-736h.png" width="2208" height="1242"/>  
+     
+    </platform>
+
+    <platform name="android">
+        <edit-config file="app/src/main/AndroidManifest.xml" mode="merge" target="/manifest/application">
+            <application android:usesCleartextTraffic="true" />
+        </edit-config>
+    </platform>
+
+    <preference name="scheme" value="app" />
+<preference name="hostname" value="localhost" />
+
+</widget>

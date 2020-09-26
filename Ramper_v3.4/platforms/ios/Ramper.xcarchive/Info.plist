@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ApplicationProperties</key>
+	<dict>
+		<key>ApplicationPath</key>
+		<string>Applications/Ramper.app</string>
+		<key>CFBundleIdentifier</key>
+		<string>ar.com.ramper.ramper</string>
+		<key>CFBundleShortVersionString</key>
+		<string>3.3</string>
+		<key>CFBundleVersion</key>
+		<string>3.3</string>
+		<key>SigningIdentity</key>
+		<string>Apple Development: Luciano Maciel Lopez Osornio (A2RUC7G3AQ)</string>
+		<key>Team</key>
+		<string>GWAFQSTY6J</string>
+	</dict>
+	<key>ArchiveVersion</key>
+	<integer>2</integer>
+	<key>CreationDate</key>
+	<date>2020-09-16T02:17:37Z</date>
+	<key>Name</key>
+	<string>Ramper</string>
+	<key>SchemeName</key>
+	<string>Ramper</string>
+</dict>
+</plist>

@@ -1,0 +1,60 @@
+    <ons-page id="Login">
+        <ons-toolbar>
+            <div class="left">
+                <ons-back-button></ons-back-button>
+            </div>
+            <div class="center"></div>
+        </ons-toolbar>
+        <div class="contenedor" style="margin-top:20%;">
+
+            <div class="spinnerObtenerCupon" class="loading" hidden>
+                <div class="loader"></div>
+            </div>
+
+            <div class="login-ramper" id="login-ramper">
+
+                <img src="lib/img/logo.png">
+
+
+
+
+
+                <p style="margin-top: 30px;">
+                    <ons-button onclick="appNavigator.pushPage('inicio-sesion.html')">INICIAR SESIÓN</ons-button>
+                </p>
+
+                <!--
+                <ons-row>
+                    <ons-col width="33%">
+                        <ons-button onclick="FacebookLogin()" class="facebook-btn">
+                            <ons-icon icon="fa-facebook"></ons-icon>
+                            F
+                        </ons-button>
+                    </ons-col>
+
+                    <ons-col width="33%">
+                        <ons-button onclick="GoogleLogin()" class="google-btn">
+                            <ons-icon icon="fa-google"></ons-icon>
+                            G
+                        </ons-button>
+                    </ons-col>
+
+                    <ons-col width="33%">
+                        <ons-button onclick="AppleLogin()" class="apple-btn">
+                            <ons-icon icon="fa-apple"></ons-icon>
+                            A
+                        </ons-button>
+                    </ons-col>
+                </ons-row>
+                -->
+               
+
+                <p style="margin-top:50px;">¿No tenes cuenta? <strong><a
+                            onclick="appNavigator.pushPage('registro.html')">Registrate</a></strong></p>
+
+            </div>
+        </div>
+
+
+
+    </ons-page>

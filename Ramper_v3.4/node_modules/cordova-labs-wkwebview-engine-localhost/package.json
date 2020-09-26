@@ -1,0 +1,40 @@
+{
+  "_from": "git+https://github.com/apache/cordova-plugins.git#wkwebview-engine-localhost",
+  "_id": "cordova-labs-wkwebview-engine-localhost@0.5.0",
+  "_inBundle": false,
+  "_integrity": "",
+  "_location": "/cordova-labs-wkwebview-engine-localhost",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "git",
+    "raw": "https://github.com/apache/cordova-plugins.git#wkwebview-engine-localhost",
+    "rawSpec": "https://github.com/apache/cordova-plugins.git#wkwebview-engine-localhost",
+    "saveSpec": "git+https://github.com/apache/cordova-plugins.git#wkwebview-engine-localhost",
+    "fetchSpec": "https://github.com/apache/cordova-plugins.git",
+    "gitCommittish": "wkwebview-engine-localhost"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "git+https://github.com/apache/cordova-plugins.git#a3cc931ee307ea5d0a2f6f347b4a87c952443be1",
+  "_spec": "https://github.com/apache/cordova-plugins.git#wkwebview-engine-localhost",
+  "_where": "/Users/pablodt/Desktop/Cordova/Orquestando/Ramper_v2.0",
+  "author": {
+    "name": "Apache Cordova"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "Cordova WKWebView Engine with http server (localhost) support",
+  "license": "Apache-2.0",
+  "main": "index.js",
+  "name": "cordova-labs-wkwebview-engine-localhost",
+  "repository": {
+    "type": "git",
+    "url": "https://git-wip-us.apache.org/repos/asf/cordova-plugins.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "0.5.0"
+}

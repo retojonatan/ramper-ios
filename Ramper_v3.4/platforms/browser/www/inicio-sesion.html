@@ -1,0 +1,62 @@
+
+    <ons-page id="InicioSesion">
+        <ons-toolbar>
+            <div class="left">
+                <ons-back-button></ons-back-button>
+            </div>
+            <div class="center"></div>
+        </ons-toolbar>
+        <div class="contenedor">
+
+            <div class="sesion-ramper">
+
+                <img src="lib/img/logo.png">
+
+
+
+
+
+
+
+                <div style="margin-top:1em;">
+                    <p style="margin-bottom:-5px;font-size:10px;text-align: left;">Email</p>
+                    <input id="log_user" type="text" class="text-input text-input--underbar" name="usuario" value=""
+                        width="100%">
+                </div>
+                <div style="margin-top:1em;">
+                    <p style="margin-bottom:-5px;font-size:10px;text-align: left;">Contraseña</p>
+                    <input id="log_pass" type="password" class="text-input text-input--underbar" name="password"
+                        value="">
+                </div>
+                <!--
+                <div style="margin-top:1em;">
+                    <label class="left">
+                        <ons-checkbox input-id="log_check"></ons-checkbox>
+                    </label>
+                    <label for="log_check" class="center">
+                        Comercio
+                    </label>
+                </div>
+                -->
+
+                <div style="margin-top: 30px;">
+
+
+                    <ons-button onclick="IniciarSesion($('#log_user').val(),$('#log_pass').val())">ENTRAR</ons-button>
+
+
+
+                    <p onclick="appNavigator.pushPage('forgot.html')" style="margin-top: 30px;">Olvidé mi Contraseña</p>
+
+
+                </div>
+
+
+
+            </div>
+        </div>
+
+
+
+    </ons-page>
+

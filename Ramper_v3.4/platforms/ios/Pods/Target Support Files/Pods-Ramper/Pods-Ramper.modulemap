@@ -1,0 +1,6 @@
+framework module Pods_Ramper {
+  umbrella header "Pods-Ramper-umbrella.h"
+
+  export *
+  module * { export * }
+}

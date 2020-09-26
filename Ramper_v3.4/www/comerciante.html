@@ -1,0 +1,32 @@
+    <ons-page id="comerciante">
+        <ons-toolbar>
+            <div class="left">
+                <ons-back-button></ons-back-button>
+            </div>
+            <div class="center">Mi Comercio</div>
+            <ons-toolbar-button onclick="ComercioLogOut();" class="right" style="color: black;">
+                cerrar sesión
+            </ons-toolbar-button>
+        </ons-toolbar>
+       
+
+        <ons-card class="product-info" id="qr" onclick="CanjearCuponQR();">
+            <div class="imagen-ficha" style="background-color: blueviolet;">
+                <i class="fa fa-qrcode" style="font-size: 40vw; margin: 0 auto; line-height: 40vh; color: #fff;margin-left: 30%;"></i>
+            </div>
+            <div class="title">QR</div>
+           
+        </ons-card>
+
+        <ons-card class="product-info" id="qr" onclick="CanjearCupon();">
+            <div class="imagen-ficha" style="background-color: orange;">
+                <i class="fa fa-font"
+                    style="font-size: 40vw; margin: 0 auto; line-height: 40vh; color: #fff;margin-left: 30%;"></i>
+            </div>
+            <div class="title">Canjear Cupón</div>
+        
+        </ons-card>
+
+
+    </ons-page>
+

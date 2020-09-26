@@ -1,0 +1,33 @@
+    <ons-page id="Tab5" data-id="5">
+        <ons-list class="gastronomia">
+            <ons-list-item expandable>
+                CATEGORÍAS SERVICIOS
+                <div class="expandable-content filtros">
+
+
+                </div>
+            </ons-list-item>
+        </ons-list>
+
+        <!--
+        <div class="dvSpinner" style="text-align:center">
+            <ons-progress-circular indeterminate class="spinner-centrado"></ons-progress-circular>
+        </div>
+    -->
+    <div class="spinnerObtenerCupon" class="loading" style="text-align: center;">
+        <div class="loader"></div>
+    </div>
+        <div id="dvContenidoServicios" style="display:none">
+            <div id="listServicios" class= "listado">
+
+            </div>
+            <p class="paginador_inf" style="text-align: center; display: none;">
+                <ons-button modifier="quiet" onclick="scrollDown()">
+                    Ver mas
+                </ons-button>
+            </p>
+            <div class="dvSpinner" style="text-align:center; display: none;">
+                <ons-progress-circular indeterminate></ons-progress-circular>
+            </div>
+        </div>
+    </ons-page>

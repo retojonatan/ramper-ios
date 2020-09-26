@@ -1,0 +1,61 @@
+  <ons-page id="Registro">
+        <ons-toolbar>
+            <div class="left">
+                <ons-back-button></ons-back-button>
+            </div>
+            <div class="center">Registrarme</div>
+        </ons-toolbar>
+
+        <div class="publica-r content" style="overflow-y: auto;">
+            <p>Completá el formulario y disfrutá los mejores descuentos!</p>
+
+            <div class="divider"></div>
+
+            <h3 id="reg-rta"></h3>
+            <div style="margin-top:2em;">
+                <p>Nombre</p>
+                <input id="reg-nombre" type="text" class="text-input text-input--underbar" placeholder="Nombre"
+                    name="nombre" value="" required>
+            </div>
+            <div style="margin-top:2em;">
+                <p>Apellido</p>
+                <input id="reg-apellido" type="text" class="text-input text-input--underbar" placeholder="Apellido"
+                    name="nombre" value="" required>
+            </div>
+            <div style="margin-top:2em;">
+                <p>Email</p>
+                <input id="reg-email" type="email" class="text-input text-input--underbar"
+                    placeholder="ejemplo@dominio.com" name="email" value="" required>
+            </div>
+            <div style="margin-top:2em;">
+                <p>Password (<span class="list-item__subtitle">Mínimo 6 alfanumérica, al menos 1 digito y 1 letra.</span>)</p>
+                <input id="reg-pass" type="password" class="text-input text-input--underbar" placeholder="Password"
+                    name="pass" value="" required">                
+            </div>
+            <div style="margin-top:2em;">
+                <p>Repetir Password</p>
+                <input id="reg-confirm" type="password" class="text-input text-input--underbar"
+                    placeholder="Repetir Password" name="pass" value="" required>
+            </div>
+
+            <div style="margin-top:2em;">
+            <label class="left">
+                <ons-checkbox input-id="chk-terminos"></ons-checkbox>
+            </label>
+            <label for="chk-terminos" class="center">
+                Acepto los <i onclick="Terminos()" style="color:rgb(0, 68, 255);">Términos y Condiciones</i>.                 
+            </label>
+            </div>
+
+
+
+            <p style="margin-top: 30px;">
+                <ons-button onclick="Registrar()" modifier="large" style="background-color:orange;">Registrarme
+                </ons-button>
+            </p>
+        </div>
+
+
+
+
+    </ons-page>

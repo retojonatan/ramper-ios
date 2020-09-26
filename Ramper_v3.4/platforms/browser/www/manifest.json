@@ -1,0 +1,18 @@
+{
+  "background_color": "#FFF",
+  "display": "standalone",
+  "name": "Ramper",
+  "short_name": "Ramper",
+  "version": "ar.com.ramper.ramper",
+  "description": "Todo lo que buscas al alcance de tu mano.",
+  "author": "Equipo de Orquestando Ideas.",
+  "icons": [
+    {
+      "src": "res/icons/ios/icon-ramper.png",
+      "type": "image/png",
+      "sizes": "undefinedxundefined"
+    }
+  ],
+  "orientation": "portrait",
+  "start_url": "index.html"
+}

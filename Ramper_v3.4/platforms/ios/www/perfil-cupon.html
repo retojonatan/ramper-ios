@@ -1,0 +1,189 @@
+<ons-page id="PCupon">
+    <ons-toolbar>
+        <div class="left">
+            <ons-back-button></ons-back-button>
+        </div>
+        <div class="center" id="cuponCenter"></div>
+        <div class="right" id="compartirCupon">
+            
+        </div>
+    </ons-toolbar>
+    <div id="spinnerCupon" class="loading">
+        <div class="loader"></div>
+    </div>
+    <div id="dvContenido" style="display:none">
+        <div id="dvCardShopping" class="data-comercio">
+            <ons-row class="extra-info">
+                <ons-col width="40%" style="flex: 0 0 40%; max-width: 40%;"><i class="fas fa-map-marker-alt"></i>
+                    <span id="spZona"></span></ons-col>
+                <ons-col width="60%" style="flex: 0 0 60%; max-width: 60%;"><i class="fas fa-tshirt"></i> <span
+                        id="spRubro"></span> </ons-col>
+            </ons-row>
+            <div class="card-none">
+                <ons-card class="product-info">
+                    <div id="dvCuponPerfilShopping">
+                    </div>
+                    <div id="dvObtenerShopping">
+
+                    </div>
+                    <!--<ons-button modifier="large" style="background-color:orange;" onclick="appNavigator.pushPage('cupon.html')">OBTENER CUPÓN</ons-button>-->
+                </ons-card>
+            </div>
+        </div>
+        <div id="dvDividerShopping" class="divider-grey"></div>
+        <div class="data-comercio">
+            <div id="dvTituloShopping">
+                <h1 id="hShopping"></h1>
+            </div>
+            <div class="imagenes">
+                <div id="dvPrimero" style="max-height:200px;overflow:hidden">
+                    <!--<img id="imgPrimero" src="" width="100%" onclick="appNavigator.pushPage('galeria.html')">-->
+                </div>
+                <div id="dvImagenes">
+                </div>
+            </div>
+            <p id="pDescripcionComercio"></p>
+            <ons-row class="extra-info">
+                <ons-col width="60%">
+                    <div id="dvRubro"></div>
+                </ons-col>
+                <ons-col id="colMenu" width="40%">
+                    <ons-button id="btnMenu" icon="fa-book-open" onclick="showMenu()"> Menu </ons-button>
+                </ons-col>
+                <ons-col id="colCronograma" width="40%">
+                    <ons-button id="btnCronograma" icon="fa-calendar-alt" onclick="showCronograma()"> Cronograma
+                    </ons-button>
+                </ons-col>
+            </ons-row>
+            <div class="divider"></div>
+            <div id="dvContactos">
+            </div>
+            <div class="divider"></div>
+            <div class="horarios">
+                <ons-list>
+                    <ons-list-item expandable>
+                        <i class="far fa-clock" style="margin-right:5px;"></i>&nbsp;<span id="spEstado">Cerrado
+                            ahora</span>
+                        <div class="expandable-content">
+                            <ons-list>
+                                <ons-list-item id="dia1" class="diasHorarios">
+                                    <div id="dvDia1" class="center list-item__center">Lunes Cerrado</div>
+                                </ons-list-item>
+                                <ons-list-item id="dia2" class="diasHorarios">
+                                    <div id="dvDia2" class="center list-item__center">Martes Cerrado</div>
+                                </ons-list-item>
+                                <ons-list-item id="dia3" class="diasHorarios active-day">
+                                    <div id="dvDia3" class="center list-item__center">Miércoles 19:00 a 02:00</div>
+                                </ons-list-item>
+                                <ons-list-item id="dia4" class="diasHorarios">
+                                    <div id="dvDia4" class="center list-item__center">Jueves 19:00 a 02:00</div>
+                                </ons-list-item>
+                                <ons-list-item id="dia5" class="diasHorarios">
+                                    <div id="dvDia5" class="center list-item__center">Viernes 19:00 a 04:00</div>
+                                </ons-list-item>
+                                <ons-list-item id="dia6" class="diasHorarios">
+                                    <div id="dvDia6" class="center list-item__center">Sábados 19:00 a 04:00</div>
+                                </ons-list-item>
+                                <ons-list-item id="dia7" class="diasHorarios">
+                                    <div id="dvDia7" class="center list-item__center">Domingo 19:00 a 02:00</div>
+                                </ons-list-item>
+                            </ons-list>
+                        </div>
+                    </ons-list-item>
+                </ons-list>
+            </div>
+        </div>
+        <div class="divider-grey" style="margin-top:-10px;"></div>
+        <div id="dvInfoAdicionalEmpresa" class="data-comercio">
+            <div class="pagos">
+                <p>Formas de Pago</p>
+                <div id="dvFormaPago">
+                    <ons-row>
+                        <ons-col>
+                            <i class="far fa-credit-card" style="margin-right:5px;"></i> Crédito
+                        </ons-col>
+                        <ons-col>
+                            <i class="far fa-credit-card" style="margin-right:5px;"></i> Débito
+                        </ons-col>
+                        <ons-col>
+                            <i class="fas fa-money-bill" style="margin-right:5px;"></i> Efectivo
+                        </ons-col>
+                        <ons-col>
+                            <i class="fas fa-money-bill" style="margin-right:5px;"></i> Mercado Pago
+                        </ons-col>
+                    </ons-row>
+                </div>
+            </div>
+            <div id="dvServiciosGastronomia" class="servicios">
+                <p>Servicios</p>
+                <ons-row class="det-servicios">
+                    <ons-col>
+                        <div id="dvCol1">
+                            <p><i class="fas fa-wifi" style="margin-right:5px;"></i> Wi-Fi</p>
+                            <p><i class="fas fa-wheelchair" style="margin-right:5px;"></i> Acceso Discapacitados</p>
+                            <p><i class="fas fa-gamepad" style="margin-right:5px;"></i> Espacio Kids</p>
+                            <p><i class="fas fa-leaf" style="margin-right:5px;"></i> Gluten Free</p>
+                        </div>
+                    </ons-col>
+                    <ons-col>
+                        <div id="dvCol2">
+                            <p><i class="fas fa-snowflake" style="margin-right:5px;"></i>Aire Acondicionado</p>
+                            <p><i class="fas fa-cocktail" style="margin-right:5px;"></i>Barra de Tragos</p>
+                            <p><i class="fas fa-leaf" style="margin-right:5px;"></i> Vegan Friendly</p>
+                            <p><i class="fas fa-sun" style="margin-right:5px;"></i> Aire Libre</p>
+                        </div>
+                    </ons-col>
+                </ons-row>
+            </div>
+            <div id="dvServiciosFitness" class="servicios">
+                <p>Actividades</p>
+                <ons-row class="det-servicios">
+                    <ons-col>
+                        <div id="dvColAct1">
+                            <p </div>
+                    </ons-col>
+                    <ons-col>
+                        <div id="dvColAct2">
+
+                        </div>
+                    </ons-col>
+                </ons-row>
+            </div>
+        </div>
+        <div class="divider-grey"></div>
+        <!-- oferta -->
+        <div id="dvCardComun" class="card-none">
+            <ons-card class="product-info">
+                <div id="dvCuponPerfil">
+                </div>
+                <div id="dvObtener">
+
+                </div>
+                <!--<ons-button modifier="large" style="background-color:orange;" onclick="appNavigator.pushPage('cupon.html')">OBTENER CUPÓN</ons-button>-->
+            </ons-card>
+        </div>
+        <div id="dvBeneficiosContenido">
+            <div class="divider-grey"></div>
+            <h5 style="padding-left:17px;">MÁS BENEFICIOS</h5>
+            <div class="divider-grey"></div>
+
+            <div id="dvBeneficios">
+
+            </div>
+        </div>
+
+        <div class="divider-grey"></div>
+
+        <!-- MAPS -->
+        <div class="data-comercio maps-info">
+            <p class="extra-info"><i class="fas fa-map-marker-alt"></i> <span id="spDomicilio"></span></p>
+        </div>
+
+
+        <span id="iframeMap"></span>
+        <!--<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13142.372567290844!2d-58.6910374!3d-34.5638554!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5ad566c01e9a4673!2sNosh+Up+Burgers+%26+Beer!5e0!3m2!1ses-419!2sar!4v1557171643744!5m2!1ses-419!2sar" width="100%" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>-->
+        <!--<iframe id="frmMaps" width="100%" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>-->
+
+    </div>
+
+</ons-page>

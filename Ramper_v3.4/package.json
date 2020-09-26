@@ -1,0 +1,61 @@
+{
+  "name": "helloworld",
+  "displayName": "HelloCordova",
+  "version": "1.0.0",
+  "description": "A sample Apache Cordova application that responds to the deviceready event.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ecosystem:cordova"
+  ],
+  "author": "Apache Cordova Team",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "cordova-android": "^8.1.0",
+    "cordova-browser": "^6.0.0",
+    "cordova-ios": "^6.0.0",
+    "cordova-labs-local-webserver": "git+https://github.com/apache/cordova-plugins.git#local-webserver",
+    "cordova-labs-wkwebview-engine-localhost": "git+https://github.com/apache/cordova-plugins.git#wkwebview-engine-localhost",
+    "cordova-plugin-android-permissions": "^1.0.2",
+    "cordova-plugin-camera": "^4.1.0",
+    "cordova-plugin-facebook4": "6.4.0",
+    "cordova-plugin-googleplus": "git+https://github.com/EddyVerbruggen/cordova-plugin-googleplus.git",
+    "cordova-plugin-inappbrowser": "^4.0.0",
+    "cordova-plugin-sign-in-with-apple": "^0.1.2",
+    "cordova-plugin-web-share": "^1.2.0",
+    "cordova-support-android-plugin": "^1.0.2"
+  },
+  "devDependencies": {
+    "cordova-plugin-whitelist": "^1.3.4",
+    "cordova-plugin-splashscreen": "~5.0.3"
+  },
+  "cordova": {
+    "plugins": {
+      "cordova-plugin-whitelist": {},
+      "cordova-plugin-splashscreen": {},
+      "cordova-plugin-facebook4": {
+        "APP_ID": "287798362401151",
+        "APP_NAME": "Ramper",
+        "FACEBOOK_HYBRID_APP_EVENTS": "false",
+        "FACEBOOK_ANDROID_SDK_VERSION": "5.13.0"
+      },
+      "cordova-plugin-googleplus": {
+        "REVERSED_CLIENT_ID": "com.googleusercontent.apps.352067348328-lvfformi8ae4gecl93e6ncscqcv4ruq8",
+        "WEB_APPLICATION_CLIENT_ID": "352067348328-lvfformi8ae4gecl93e6ncscqcv4ruq8.apps.googleusercontent.com"
+      },
+      "cordova-plugin-web-share": {},
+      "cordova-plugin-android-permissions": {},
+      "cordova-plugin-camera": {
+        "ANDROID_SUPPORT_V4_VERSION": "27.+"
+      },
+      "cordova-plugin-inappbrowser": {},
+      "cordova-plugin-sign-in-with-apple": {}
+    },
+    "platforms": [
+      "android",
+      "browser"
+    ]
+  }
+}

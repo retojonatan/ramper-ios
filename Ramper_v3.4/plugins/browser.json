@@ -1,0 +1,44 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "io.cordova.hellocordova"
+    },
+    "cordova-plugin-splashscreen": {
+      "PACKAGE_NAME": "io.cordova.hellocordova"
+    },
+    "cordova-plugin-facebook4": {
+      "APP_ID": "287798362401151",
+      "APP_NAME": "Ramper",
+      "FACEBOOK_HYBRID_APP_EVENTS": "false",
+      "FACEBOOK_ANDROID_SDK_VERSION": "5.13.0",
+      "PACKAGE_NAME": "ar.com.ramper.ramper"
+    },
+    "cordova-plugin-googleplus": {
+      "WEB_APPLICATION_CLIENT_ID": "352067348328-lvfformi8ae4gecl93e6ncscqcv4ruq8.apps.googleusercontent.com",
+      "PACKAGE_NAME": "ar.com.ramper.ramper"
+    },
+    "cordova-plugin-web-share": {
+      "PACKAGE_NAME": "ar.com.ramper.ramper"
+    },
+    "cordova-plugin-android-permissions": {
+      "PACKAGE_NAME": "ar.com.ramper.ramper"
+    },
+    "cordova-plugin-camera": {
+      "PACKAGE_NAME": "ar.com.ramper.ramper"
+    },
+    "cordova-plugin-inappbrowser": {
+      "PACKAGE_NAME": "ar.com.ramper.ramper"
+    },
+    "cordova-plugin-sign-in-with-apple": {
+      "PACKAGE_NAME": "ar.com.ramper.ramper"
+    }
+  },
+  "dependent_plugins": {}
+}

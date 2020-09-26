@@ -1,0 +1,61 @@
+    <ons-page id="Publica">
+        <ons-toolbar>
+            <div class="left">
+                <ons-back-button></ons-back-button>
+            </div>
+            <div class="center">Publicá en Ramper</div>
+        </ons-toolbar>
+
+        <div class="publica-r">
+            <p>Si querés ser parte de Ramper completá el siguiente formulario y un asesor se pondrá en contacto con vos.
+            </p>
+
+            <div class="divider"></div>
+            <div style="margin-top:2em;">
+
+                <p>¿En qué zona se encuentra tu comercio?</p>
+                <ons-select id="choose-sel" onchange="editSelects(event)">
+                    <option value="sanmiguel">San Miguel</option>
+                    <option value="muniz">Muñiz</option>
+                    <option value="bellavista">Bella Vista</option>
+                    <option value="otra">Otra Localidad</option>
+                </ons-select>
+            </div>
+            <div style="margin-top:2em;">
+
+                <p>¿Cuál es la categoría de tu comercio?</p>
+                <ons-select id="choose-sel" onchange="editSelects(event)">
+                    <option value="gastronomia">Gastronomía</option>
+                    <option value="shopping">Shopping</option>
+                    <option value="fitness">Fitness</option>
+                    <option value="servicios">Servicios</option>
+                </ons-select>
+            </div>
+
+            <div style="margin-top:2em;">
+                <p>¿Cuál es el nombre de tu comercio/servicio?</p>
+                <input type="text" class="text-input text-input--underbar" placeholder="Nombre Comercio"
+                    name="nombrecomercio" value="">
+            </div>
+            <div style="margin-top:2em;">
+                <p>¿Cuál es tu nombre?</p>
+                <input type="text" class="text-input text-input--underbar" placeholder="Nombre" name="nombre" value="">
+            </div>
+            <div style="margin-top:2em;">
+                <p>Por último, un número de contacto</p>
+                <input type="text" class="text-input text-input--underbar" placeholder="Teléfono" name="telefono"
+                    value="">
+            </div>
+
+
+            <p style="margin-top: 30px;">
+                <ons-button onclick="login()" modifier="large" style="background-color:orange;">Enviar Datos
+                </ons-button>
+            </p>
+        </div>
+
+
+
+
+    </ons-page>
+
